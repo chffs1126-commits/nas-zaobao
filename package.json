@@ -12,6 +12,7 @@
   "dependencies": {
     "exceljs": "^4.4.0",
     "js-yaml": "^4.1.1",
+    "openclaw-sdk": "^2026.3.19",
     "rss-parser": "^3.13.0"
   }
 }
