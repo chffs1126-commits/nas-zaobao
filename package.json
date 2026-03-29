@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-news-template",
+  "version": "1.0.0",
+  "description": "AI资讯早报自动化抓取+生成系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "js-yaml": "^4.1.1",
+    "rss-parser": "^3.13.0"
+  }
+}

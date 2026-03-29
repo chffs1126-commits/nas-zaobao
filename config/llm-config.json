@@ -1,0 +1,10 @@
+{
+  "provider": "minimax",
+  "model": "MiniMax-M2.7",
+  "apiKey": "",
+  "baseUrl": "",
+  "temperature": 0.3,
+  "maxTokens": 2000,
+  "enabled": false,
+  "useFor": "summary"
+}

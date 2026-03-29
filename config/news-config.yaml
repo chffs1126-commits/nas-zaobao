@@ -1,0 +1,50 @@
+# AI新闻自动化配置文件
+# OpenClaw News Template
+
+# 新闻抓取配置
+news:
+  # 目标日期 (today = 今天, yesterday = 昨天)
+  targetDate: today
+  
+  # 每次抓取的最多条数
+  maxItemsPerFeed: 40
+  
+  # AI新闻分类数量上限
+  maxPerCategory: 8
+
+# 分类规则
+categories:
+  global_hot:
+    name: "全球热点"
+    keywords: ["国外", "美国", "欧洲", "谷歌", "OpenAI", "Anthropic", "Meta", "Tesla", "英国", "欧盟"]
+    
+  domestic:
+    name: "国内动态"
+    keywords: ["中国", "国内", "华为", "百度", "腾讯", "阿里", "字节", "小米", "比亚迪", "蔚来", "小鹏", "京东"]
+    
+  industry:
+    name: "行业运用"
+    keywords: ["自动驾驶", "人形机器人", "智能驾驶", "具身", "AI应用", "落地", "商业化"]
+    
+  tech_breakthrough:
+    name: "技术突破"
+    keywords: ["量子计算", "突破", "研究", "科学家", "实验", "论文", "学术", "新型", "首次"]
+    
+  risk_regulation:
+    name: "AI风险与监管"
+    keywords: ["监管", "安全", "伦理", "风险", "裁员", "失控", "AI威胁", "监管"]
+
+# 飞书文档配置
+feishu:
+  enabled: true
+  indexDocId: "W6c9dEL0qoIK7Qx9r20cP96Inbg"
+  cloudFolderToken: "SjHzftHy8lgAjKdFkXEcwvlNnqe"
+  uploadAfterUpdate: true
+
+# 邮件推送配置
+email:
+  enabled: false
+  smtpHost: "smtp.qq.com"
+  smtpPort: 587
+  from: "279772894@qq.com"
+  to: []
