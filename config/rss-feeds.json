@@ -1,38 +1,12 @@
 {
   "feeds": [
-    {
-      "name": "IT之家",
-      "url": "https://www.ithome.com/rss/",
-      "enabled": true,
-      "category": "tech",
-      "priority": 1,
-      "timeout": 15000
-    },
-    {
-      "name": "爱范儿",
-      "url": "https://www.ifanr.com/feed",
-      "enabled": true,
-      "category": "tech",
-      "priority": 2,
-      "timeout": 15000
-    },
-    {
-      "name": "少数派",
-      "url": "https://sspai.com/feed",
-      "enabled": true,
-      "category": "tech",
-      "priority": 3,
-      "timeout": 20000
-    },
-    {
-      "name": "36氪",
-      "url": "https://36kr.com/feed",
-      "enabled": false,
-      "category": "tech",
-      "priority": 4,
-      "timeout": 15000,
-      "note": "有Cloudflare验证，暂时禁用"
-    }
+    {"name": "36氪", "url": "https://36kr.com/feed", "enabled": true, "category": "tech", "priority": "high"},
+    {"name": "量子位", "url": "https://www.qbitai.com/rss", "enabled": true, "category": "ai", "priority": "high"},
+    {"name": "IT之家", "url": "https://www.ithome.com/rss/", "enabled": true, "category": "tech", "priority": "medium"},
+    {"name": "机器之心", "url": "https://www.jiqizhixin.com/rss", "enabled": false, "category": "ai", "priority": "high"},
+    {"name": "雷锋网", "url": "https://www.leiphone.com/feed/", "enabled": true, "category": "tech", "priority": "high"},
+    {"name": "少数派", "url": "https://sspai.com/feed", "enabled": false, "category": "lifestyle", "priority": "medium"},
+    {"name": "爱范儿", "url": "https://www.ifanr.com/feed", "enabled": true, "category": "tech", "priority": "low"}
   ],
   "filter": {
     "aiKeywords": [
@@ -47,7 +21,7 @@
     "excludeKeywords": [
       "售价", "价格", "降价", "优惠", "促销", "折扣",
       "抽奖", "中奖", "限时抢", "秒杀",
-      "八卦", "绯闻", "丑闻", "震惊", "突发"
+      "震惊", "突发", "刚刚"
     ],
     "minMatchCount": 1
   }

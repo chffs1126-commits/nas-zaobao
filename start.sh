@@ -1,7 +1,8 @@
 #!/bin/bash
 # 一键启动新闻抓取+生成日报
 
-BASE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BASE_DIR="$(dirname "$SCRIPT_DIR")"
 DATE="${1:-$(date +%Y-%m-%d)}"
 
 echo "📰 OpenClaw 新闻自动化"
@@ -11,8 +12,7 @@ echo ""
 
 # 1. 抓取RSS新闻
 echo "📡 步骤1: 抓取RSS新闻..."
-cd "$BASE_DIR/scripts
-node rss-news.js "$DATE"
+node "$SCRIPT_DIR/scripts/rss-news.js" "$DATE"
 
 if [ $? -ne 0 ]; then
   echo "❌ RSS抓取失败"
@@ -23,7 +23,7 @@ echo ""
 
 # 2. 生成日报
 echo "📝 步骤2: 生成早报..."
-node daily-news-report.js "$DATE"
+node "$SCRIPT_DIR/scripts/daily-news-report.js" "$DATE"
 
 if [ $? -ne 0 ]; then
   echo "❌ 日报生成失败"
